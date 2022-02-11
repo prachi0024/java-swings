@@ -1,0 +1,59 @@
+import javax.swing.*;
+import java.awt.event.*;
+public class SwingEv {
+        JFrame frame;
+        JTextField tf1, tf2, tf3;
+        JButton bt1,bt2;
+        SwingEv(){
+        	frame = new JFrame();
+        	tf1=  new JTextField();
+        	tf1.setBounds(50,50,150,20);;
+        	tf2 = new JTextField();
+        	tf2.setBounds(50,100,150,20);;
+        	tf3=newJTextField();
+        	tf3.setEditable(false);;
+        	bt1=new JButton("+");
+        	bt1.setBounds(50,200,50,50);
+        	bt2=new JButton("_");
+            bt2.setBounds(120,200,50,50);
+            bt1.addActionLister(this);
+            bt2.addActionLister(this);
+            frame.add(tf1);
+            frame.add(tf2);
+            frame.add(tf3);
+            frame.add(bt1);
+            frame.add(bt2);
+            frame.setSize(300,300);
+            frame.setlayout(null);
+            frame.setVisible(true);
+        }
+        
+            
+            
+            
+        }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SwingEv obj = new SwingEv();
+
+	}
+@override
+public void actionperformed(action event e) {
+	string s1 = tf1.get text();
+	string s2 = tf2.get text();
+	int a = Integer.parseInt(s1);
+	int b = Integer.parseInt(s2);
+	 int c=0;
+	 if(e.getsource()== bt1)
+	 {
+		 c=a+b;
+		 
+	 }
+	 else if(e.getsource()==bt2) {
+		 c=a-b;
+	 }
+	 string result= String.valueOf(c);
+	 tf3.settext(result);
+}
+
+}
