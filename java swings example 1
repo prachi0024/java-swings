@@ -1,0 +1,20 @@
+import javax.swing.*;
+public class Swings1 {
+	Swings1()
+	{
+		JFrame frame = new JFrame();
+		JButton bt= new JButton("click me");
+	}
+	bt.setBounds(50,50,50,30);
+	Frame.add(bt);
+	Frame.setsize(800,800);
+	Frame.setvisible(true);
+	Frame.setlayout(null);
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Swings1 obj = new Swings1();
+	}
+
+}
